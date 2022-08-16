@@ -1,13 +1,20 @@
 import re
 from codecs import open
-from os import path, environ
+from os import path, environ, remove
+import subprocess as sub
 
 from setuptools import setup
 
 PACKAGE_NAME = "discord_components_mirror"
 HERE = path.abspath(path.dirname(__file__))
 
-with open("README.rst", "r", encoding="utf-8") as f:
+TMP_README = path.join("/tmp", "README.rst")
+try:
+    remove(TMP_README)
+except OSError:
+    pass
+sub.run(["pandoc", "README.md", "--from", "markdown", "--to", "rst", "-s", "-o", TMP_README], check=True)
+with open(TMP_README, "r", encoding="utf-8") as f:
     README = f.read()
 
 with open("requirements.txt", "r", encoding="utf-8") as f:
