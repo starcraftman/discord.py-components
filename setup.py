@@ -4,10 +4,10 @@ from os import path, environ
 
 from setuptools import setup
 
-PACKAGE_NAME = "discord_components"
+PACKAGE_NAME = "discord_components_mirror"
 HERE = path.abspath(path.dirname(__file__))
 
-with open("README.md", "r", encoding="utf-8") as f:
+with open("README.rst", "r", encoding="utf-8") as f:
     README = f.read()
 
 with open("requirements.txt", "r", encoding="utf-8") as f:
@@ -36,7 +36,7 @@ setup(
     version=VERSION,
     author="kiki7000",
     author_email="devkiki7000@gmail.com",
-    description="An unofficial library for discord components.",
+    description="An unofficial library for discord components. Mirror only.",
     extras_require=extras,
     include_package_data=True,
     install_requires=requirements,
@@ -44,7 +44,7 @@ setup(
     long_description=README,
     long_description_content_type="text/markdown",
     url="https://github.com/kiki7000/discord.py-components",
-    packages=["discord_components", "discord_components.ext"],
+    packages=["discord_components_mirror", "discord_components_mirror.ext"],
     python_requires=">=3.6",
     classifiers=[
         "Intended Audience :: Developers",

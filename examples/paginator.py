@@ -1,7 +1,7 @@
 from typing import List
 
 from discord.abc import Messageable
-from discord_components import (
+from discord_components_mirror import (
     DiscordComponents,
     Button,
     ButtonStyle,

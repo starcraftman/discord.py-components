@@ -1,4 +1,4 @@
-from discord_components import Button, Select, SelectOption, ComponentsBot
+from discord_components_mirror import Button, Select, SelectOption, ComponentsBot
 
 
 bot = ComponentsBot("!")
