@@ -4,7 +4,7 @@
 </div>
 <div align="center">
         <a href="https://travis-ci.com/kiki7000/discord.py-components"><img src="https://travis-ci.com/kiki7000/discord.py-components.svg?branch=master" alt="Build Status"></a>
-        <a href="https://pypi.org/project/discord-components-mirror"><img src="https://badge.fury.io/py/discord-components-mirrror.svg" alt="PyPI version"></a>
+        <a href="https://pypi.org/project/discord-components-mirror"><img src="https://badge.fury.io/py/discord-components-mirror.svg" alt="PyPI version"></a>
         <a href="https://pypi.org/project/discord-components-mirror"><img src="https://img.shields.io/pypi/dm/discord-components-mirror" alt="PyPI downloads"></a>
 </div>
 <p align="center">
